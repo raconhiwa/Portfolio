@@ -1,0 +1,66 @@
+// COLOR VARIABLES
+$cor-primaria: #c69963;
+$cor-primaria-escuro: #B28451;
+
+$cor-secundaria: #101d2c;
+
+$cor-cinza-claro-1: #f9f7f6;
+$cor-cinza-claro-2: #aaa;
+
+$cor-cinza-escuro-1: #54483A;
+$cor-cinza-escuro-2: #6D5D4B;
+
+// FONT VARIABLES
+$font-primaria: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+//RESPONSIVE BREAKPOINTS
+
+$bp-maior: 75em;
+$bp-grande: 62.5em;
+$bp-medio: 50em;
+$bp-pequeno: 37.5em;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-maior) {
+      font-size: 50%;
+    };
+
+
+}
+
+body {
+    font-family: $font-primaria;
+    color: $cor-cinza-escuro-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [sidebar-start]8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start]minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $bp-grande) {
+      grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+      grid-template-columns: [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start]minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: $bp-medio) {
+      grid-template-rows: 6rem calc(100vh - 6rem);
+    }
+
+
+}

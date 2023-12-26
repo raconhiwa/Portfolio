@@ -1,0 +1,29 @@
+.coffee-mug {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: #3f2616;
+    box-shadow: 0 0 0 1rem #442918,
+    0 0 0  2.5rem #3c2415,
+    0 0 0  4.2rem #fe9407,
+    0 0 0 6.5rem #feaa3a,
+    0 12rem 0 -2.5rem #3c2415,
+    10rem 7rem 0 -2.5rem #3c2415,
+    8rem 14rem 0 -1rem #3c2415,
+    0 21rem 0 -5.5rem #3c2415,
+    2rem 25rem 0 -6.5rem #3c2415;
+
+}
+
+.coffee-mug:before {
+    content: '';
+    position: absolute;
+    height: 7.5rem;
+    width: 6rem;
+    background: #e49934;
+    top: -8.5rem;
+    right: -7.5rem;
+    border-radius: .5rem;
+    transform: rotate(45deg);
+}

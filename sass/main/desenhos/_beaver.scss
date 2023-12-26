@@ -1,0 +1,313 @@
+.beaver {
+    width: 35rem;
+    height: 42rem;
+    background: #f0d0d1;
+    border: 2rem solid #fff;
+    position: relative;
+
+    &__eye-left {
+        position: absolute;
+        width: 2rem;
+        height: 1rem;
+        border: .3rem solid #3c2114;
+        border-top: 0;
+        border-bottom-left-radius: 10rem;
+        border-bottom-right-radius: 10rem;
+        top: 35%;
+        left: 32%;
+    }
+
+    &__eye-right {
+        position: absolute;
+        width: 2rem;
+        height: 1rem;
+        border: .3rem solid #3c2114;
+        border-top: 0;
+        border-bottom-left-radius: 10rem;
+        border-bottom-right-radius: 10rem;
+        top: 35%;
+        right: 32%;
+    }
+
+    &__lashes {
+        position: absolute;
+        width: .2rem;
+        height: .8rem;
+        background: #3c2114;
+        bottom: -.8rem;
+        left: 48%;
+    
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #3c2114;
+            left: -1rem;
+            top: -.2rem;
+            transform: rotate(20deg);
+        }
+        
+        
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #3c2114;
+            right: -1rem;
+            top: -.2rem;
+            transform: rotate(-20deg);
+        }
+    }
+    
+    
+    
+    &__muzzle {
+        position: absolute;
+        width: 8.7rem;
+        height: 5.5rem;
+        background: #ffd49d;
+        top: 45%;
+        left: 27%;
+        border-radius: 5rem 0 0 5rem;
+        transform: rotate(-10deg);
+    
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #ffd49d;
+            left: 100%;
+            border-radius: 0 5rem 5rem 0;
+            transform: rotate(20deg);
+            transform-origin: left top;
+        }
+    }
+    
+    
+    
+    &__nose {
+        position: absolute;
+        width: 5.6rem;
+        height: 4.2rem;
+        background: #3c2114;
+        left: 42%;
+        top: 42%;
+        border-radius: 100% 100% 40% 40%;
+    }
+    
+    &__teeth {
+        position: absolute;
+        width: 4.4rem;
+        height: 4rem;
+        background: #fff;
+        left: 44%;
+        top: 53%;
+        border-radius: .5rem;
+    
+        &:before {
+            content: '';
+            position: absolute;
+            width: .2rem;
+            height: 100%;
+            background: #3c2114;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
+    
+    
+    &__whiskers-left {
+        position: absolute;
+        width: 10.5rem;
+        height: .2rem;
+        background: #7a3b1a;
+        left: 10%;
+        top: 48%;
+        transform: rotate(10deg);
+    
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #7a3b1a;
+            left: .2rem;
+            top: 1.5rem;
+            transform: rotate(-10deg);
+        }
+        
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #7a3b1a;
+            left: .5rem;
+            top: 3rem;
+            transform: rotate(-20deg);
+        }
+    }
+    
+    
+    
+    
+    &__whiskers-right {
+        position: absolute;
+        width: 10.5rem;
+        height: .2rem;
+        background: #7a3b1a;
+        right: 10%;
+        top: 48%;
+        transform: rotate(-10deg);
+    
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #7a3b1a;
+            right: .2rem;
+            top: 1.5rem;
+            transform: rotate(10deg);
+        }
+        
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #7a3b1a;
+            right: .5rem;
+            top: 3rem;
+            transform: rotate(20deg);
+        }
+    }
+    
+    
+    
+    &__ear-left {
+        position: absolute;
+        width: 3.8rem;
+        height: 4.6rem;
+        background: #f0a77e;
+        border: .8rem solid #a35a37;
+        top: 15%;
+        left: 18%;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+        
+    }
+    
+    &__ear-right {
+        position: absolute;
+        width: 3.8rem;
+        height: 4.6rem;
+        background: #f0a77e;
+        border: .8rem solid #a35a37;
+        top: 15%;
+        right: 18%;
+        border-radius: 50%;
+        transform: rotate(45deg);
+        
+    }
+    
+}
+
+.beaver__body {
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    background: #a35a37;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50% 50% 0 0;
+
+    &--arm-left {
+        position: absolute;
+        width: 45%;
+        height: 20%;
+        background: #7a3b1a;
+        left: 0;
+        bottom: 10%;
+        border-radius: 0 5rem 5rem 0;
+        transform: skewY(5deg)
+    }
+    
+    
+    &--arm-right {
+        position: absolute;
+        width: 45%;
+        height: 20%;
+        background: #7a3b1a;
+        right: 0;
+        bottom: 10%;
+        border-radius: 5rem 0 0 5rem;
+        transform: skewY(-5deg)
+    }
+    
+    &--bow {
+        position: absolute;
+        width: 3rem;
+        height: 2.5rem;
+        background: #f0d0d1;
+        right: 25%;
+        top: 8%;
+        border-radius: 50% 15% 15% 50%;
+        transform: rotate(10deg);
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #f0d0d1;
+            border-radius: 15% 50% 50% 15%;
+            left: -3rem;
+        }
+    }
+    
+    &--heart {
+        position: absolute;
+        width: 8.5rem;
+        height: 8.5rem;
+        background: #f0d0d1;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f0d0d1;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+        
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f0d0d1;
+            transform: translateX(-50%);
+            border-radius: 50%;
+        }
+        
+    }
+
+
+}
+
+
+

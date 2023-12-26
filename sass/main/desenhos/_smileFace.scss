@@ -1,0 +1,98 @@
+.face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: 30rem;
+    background: #fdd671;
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 0 #f9b400;
+
+    
+    @media only screen and (max-width: $bp-gig) {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    &__eyes {
+        position: absolute;
+        width: 5rem;
+        height: 10rem;
+        background: #000;
+        border-radius: 50%;
+        top: 5rem;
+
+            
+    @media only screen and (max-width: $bp-gig) {
+        width: 3rem;
+        height: 7rem;
+    }
+    
+        &:before {
+            content: '';
+            width: 2rem;
+            height: 3rem;
+            top: 1.1rem;
+            left: .9rem;
+            border-radius: 50%;
+            position: absolute;
+            background: #fdd671;
+
+            @media only screen and (max-width: $bp-gig) {
+                width: 1rem;
+                height: 2rem;
+            }
+        }
+    }
+    
+    
+    &__r {
+        
+        right: 7em
+    }
+    
+    &__l {
+        
+        left: 7rem;
+    }
+    
+    &__mouth {
+        position: absolute;
+        width: 13rem;
+        height: 6rem;
+        background: #000;
+        bottom: 3rem;
+        left: 8rem;
+        border-bottom-left-radius: 20rem;
+        border-bottom-right-radius: 20rem;
+        border: 1rem solid #000;
+        overflow: hidden;
+
+        @media only screen and (max-width: $bp-gig) {
+            width: 10rem;
+            height: 4rem;
+            left: 7rem;
+        }
+        
+        &:after {
+            content: '';
+            position: absolute;
+            width: 75%;
+            height: 75%;
+            background: #ef5a64;
+            border-radius: 50%;
+            bottom: -2rem;
+            left: 2rem;
+
+            @media only screen and (max-width: $bp-gig) {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+    
+    
+}
+

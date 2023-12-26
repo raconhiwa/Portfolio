@@ -1,0 +1,41 @@
+.logo__figma {
+    width: 18rem;
+    height: 27rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.part {
+    width: 9rem;
+    height: 9rem;
+}
+
+.part-1 {
+    background: #eeae2a;
+    border-top-left-radius: 60%;
+    border-bottom-left-radius: 60%;
+}
+
+.part-2 {
+    background: #fb7266;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.part-3 {
+    background: #a061fa;
+    border-top-left-radius: 60%;
+    border-bottom-left-radius: 60%;
+}
+
+.part-4 {
+    background: #2ebdfa;
+    border-radius: 50%
+}
+
+.part-5 {
+    background: #00ce84;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}

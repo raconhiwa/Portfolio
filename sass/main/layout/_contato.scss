@@ -1,0 +1,285 @@
+.contato {
+    position: relative;
+    width: 75%;
+    height: 85%;
+    // background-image: linear-gradient(to left, #FF416C, #FF4B2B);
+    // background-image: linear-gradient(to left, #00B4DB, #0083B0);
+    // background: #fff;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
+    box-shadow: 0 .8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
+
+    @media only screen and (max-width: $bp-small) {
+        width: 100%;
+        
+    }
+
+    &__form {
+        
+        &--enviar {
+            position: relative;
+            font-size: 4rem;
+            width: 15rem;
+            height: 5rem;
+            border: none;
+            outline: none;
+            background-color: #8BC6EC;
+            background: #7F00FF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+           border-radius: .2rem;
+            overflow: hidden;
+            transition: all .2s;
+            
+            
+
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 100%;
+                height: .5rem;
+                background: var(--cor, #390da0);
+                transition: all .2s;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: -100%;
+                width: 100%;
+                height: .5rem;
+                background: var(--cor, #390da0);
+                transition: all .2s;
+                
+                
+            }
+
+            &:hover .teste {
+                transform: scale(1);
+            }
+
+            &:hover:before{
+                left: 0;
+            }
+
+            &:hover:after {
+                left: 0;
+            }
+
+            &:hover {
+                background: transparent;
+                
+            }
+
+            &:hover .contato__form--enviar-span:before {
+                top: 0;
+            }
+
+            &:hover .contato__form--enviar-span:after {
+                top: 0;
+            }
+
+            &-span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -100%;
+                    left: 0;
+                    width: .5rem;
+                    height: 100%;
+                    background: var(--cor, #390da0);
+                    transition: all .2s;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    width: .5rem;
+                    height: 100%;
+                    background: var(--cor, #390da0);
+                    transition: all .2s;
+                    
+                }
+            }
+        }
+        &--box {
+            position: relative;  
+
+            &-campo {
+                border: none;
+                outline: none;
+                width: 30rem;
+                height: 15rem;
+                background: transparent;
+                color: #390da0;      
+                font-size: 2rem; 
+                
+                &-span {
+                position: absolute;
+                top: 1rem;
+                left: 2.5rem;
+                font-size: 2rem;
+                pointer-events: none;
+                color: #000;
+                transition: all .2s;
+                font-weight: 900;
+                text-transform: uppercase;
+                font-family: arial;
+                }
+
+                &:focus ~ .contato__form--box-borda-2, &:valid ~ .contato__form--box-borda-2 {
+                    width: 102%;
+                }
+
+                &:focus ~ .contato__form--box-campo-span, &:valid ~ .contato__form--box-campo-span {
+                    transform: translate(-2.5rem, -3.5rem);
+                    color: #ff3399;
+                    font-weight: 900;
+                }
+            }
+
+            &-span {
+                position: absolute;
+                top: 2rem;
+                left: 2rem;
+                font-size: 2rem;
+                pointer-events: none;
+                color: #000;
+                transition: all .2s;
+                font-weight: 900;
+                text-transform: uppercase;
+                font-family: arial;
+            }
+
+            &-input {
+                border: none;
+                outline: none;
+                width: 30rem;
+                height: 5rem;
+                background: transparent;
+                color: #390da0;      
+                font-size: 2rem;  
+
+                &:focus ~ .contato__form--box-borda-2, &:valid ~ .contato__form--box-borda-2 {
+                    width: 102%;
+                }
+
+                &:focus ~ .contato__form--box-span, &:valid ~ .contato__form--box-span {
+                    transform: translate(-2rem, -3.5rem);
+                    color: #ff3399;
+                    font-weight: 900;
+                }
+            }
+
+            &-borda {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 102%;
+                height: .3rem;
+                background: #ff3399;
+
+                &-2 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: .3rem;
+                background: #45f3ff;
+                transition: all .4s;
+                }
+            }
+            
+        }
+        &--lado {
+            &-esquerdo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                background: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 2rem 0 0 2rem;
+                gap: 2rem;
+
+                @media only screen and (max-width: $bp-large) {
+                    width: 100%
+                }
+
+                
+            }
+
+            &-direito {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                background: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 0 2rem 2rem 0;
+
+                @media only screen and (max-width: $bp-large) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+.assunto {
+    transform: translateY(-3.5rem);
+}
+
+.teste {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #390da0;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: .1s;
+    transform: scale(0);
+    z-index: -1;
+}
+
+$sheet-width: 800px;
+$bg: white;
+$faded: #ddd;
+$faded-light: #eee;
+$faded-dark: #bbb;
+$radius: 10px;
+$gutter: 10px;
+$bubble-size: 10px;
+$small-box-width: 30px;
+$large-box-width: 70px;
+
+textarea {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: $radius;
+}

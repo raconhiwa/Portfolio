@@ -1,0 +1,23 @@
+.indisponivel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media only screen and (max-height: 19em) {
+        display: flex;
+    }
+
+    & p{
+        font-size: 2rem;
+        color: #fff;
+        overflow: none;
+    }
+}

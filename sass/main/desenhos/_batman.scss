@@ -1,0 +1,114 @@
+.oval {
+    width: 23rem;
+    height: 13rem;
+    background: #fdff00;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.logo {
+    position: absolute;
+    width: 21.2rem;
+    height: 11.2rem;
+    background: #000;
+    border-radius: 50%;
+}
+
+.o1 {
+    position: absolute;
+    width: 3.3rem;
+    height: 7rem;
+    background: #fdff00;
+    border-radius: 50%;
+    top: 6.7rem;
+    left: 4.4rem;
+    transform: rotate(-41deg)
+}
+
+.o2 {
+    position: absolute;
+    width: 3.3rem;
+    height: 7rem;
+    background: #fdff00;
+    border-radius: 50%;
+    top: 6.7rem;
+    right: 4.4rem;
+    transform: rotate(41deg)
+}
+
+.o3 {
+    position: absolute;
+    width: 3.8rem;
+    height: 7rem;
+    background: #fdff00;
+    border-radius: 50%;
+    top: 7.3rem;
+    lefT: 6.8rem;
+    transform: rotate(-15deg)
+}
+
+.o4 {
+    position: absolute;
+    width: 3.8rem;
+    height: 7rem;
+    background: #fdff00;
+    border-radius: 50%;
+    top: 7.3rem;
+    right: 6.8rem;
+    transform: rotate(15deg)
+}
+
+.o5 {
+    position: absolute;
+    width: 3.7rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #fdff00;
+    top: 0;
+    left: 5.7rem;
+}
+
+.sq1 {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fdff00;
+    top: 0;
+    left: 7.4rem;
+}
+
+.o6 {
+    position: absolute;
+    width: 3.7rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #fdff00;
+    top: 0;
+    right: 5.7rem;
+}
+
+.sq2 {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fdff00;
+    top: 0;
+    right: 7.4rem;
+}
+
+.ears {
+    position: absolute;
+    top: 0;
+    left: 9.5rem;
+    border-bottom: 1.2rem solid #fdff00;
+    border-left: .6rem solid #000;
+    border-right: .6rem solid #000;
+    width: 1.1rem;
+    transform: rotate(180deg);
+
+}

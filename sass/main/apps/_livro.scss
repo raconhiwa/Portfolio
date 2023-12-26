@@ -1,0 +1,265 @@
+.container--livro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    @media only screen and (max-width: $bp-small) { 
+        
+    }
+}
+
+.livro {
+    position: relative;
+    margin-top: 5rem;
+    width: 35rem;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s;
+    
+    
+    @media only screen and (max-width: $bp-gig) {
+        margin-top: 20rem;
+        width: 29rem;
+        
+    }
+
+
+    &__papel {
+        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        perspective: 150rem;
+        
+        &--frente, &--tras {
+            background: #eee;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transform-origin: left;
+            transition: transform .5s;
+            
+
+            &-conteudo {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &--frente {
+            z-index: 1;
+            backface-visibility: hidden;
+
+            &-titulo {
+                position: absolute;
+                top: 5rem;
+                font-size: 3rem;
+                font-family: Rubik Doodle Shadow;;
+                
+            }
+
+            &-desenho {
+                position: absolute;
+                top: 12rem;
+                width: 100%;
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: -1;
+
+                @media only screen and (max-width: $bp-gig) {
+                    left: -2rem;
+                    }
+
+            
+                
+                &-caneta {
+                    position: relative;
+                    width: 3rem;
+                    height: 27rem;
+                    border: .1rem solid #000;
+                    transform: rotate(45deg);
+                    z-index: 100;
+                    
+
+                    @media only screen and (max-width: $bp-gig) {
+                    width: 2.5rem;
+                    height: 23rem;
+                    margin-top: 3.7rem;
+                    margin-left: 2.3rem;
+
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: -4.2rem;
+                        left: -.3rem;
+                        width: 3rem;
+                        height: 4rem;
+                        border: .1rem solid #000;
+                        
+                        @media only screen and (max-width: $bp-gig) {
+                            left: -.3rem;
+                            }
+        
+                    }
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: -7.3rem;
+                        left: .5rem;
+                        width: 2rem;
+                        height: 3rem;
+                        border: .1rem solid #000;
+                        z-index: -1;
+                        border-top-left-radius: .7rem;
+                        border-top-right-radius: .7rem;
+
+                        @media only screen and (max-width: $bp-gig) {
+                            left: .3rem;
+                            }
+        
+                    }
+
+                }
+                &-bico {
+                    position: absolute;
+                    width: .3rem;
+                    height: 0;
+                    bottom: 5rem;
+                    left: 5.1rem;
+                    border-bottom: 3.5rem solid #000;
+                    border-left: 1.5rem solid transparent;
+                    border-right: 1.5rem solid transparent;
+                    transform: rotate(-135deg);
+
+                    @media only screen and (max-width: $bp-gig) {
+                        border-bottom: 2.9rem solid #000;
+                    border-left: 1.3rem solid transparent;
+                    border-right: 1.3rem solid transparent;
+                        }
+    
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: .3rem;
+                        height: .4rem;
+                        bottom: 0;
+                        left: 0;
+                        background: #000;
+                    }
+                }
+
+                &-alca {
+                    position: absolute;
+                    top: -8rem;
+                    left: -1.9rem;
+                    width: 6rem;
+                    height: 20rem;
+                    border-top: 5rem solid transparent;
+                    border-right: 1rem solid #000;
+                    border-bottom: .1rem solid transparent;
+                    border-radius: 100%;             
+                    transform: rotate(-5deg);
+
+                    @media only screen and (max-width: $bp-gig) {
+                        left: -1.9rem;
+                        transform: rotate(-10deg);
+                        }
+    
+                }
+
+                &-rabisco {
+                    position: absolute;
+                    bottom: 4rem;
+                    left: 5rem;
+                    width: 75%;
+                    height: 1rem;
+                    background: #000;
+                }
+            }
+
+        }
+
+        &--tras {
+            z-index: 0;
+
+            &-conteudo {
+                transform: rotateY(180deg);
+            }
+            
+         }
+
+    }
+    
+}
+
+#p1 {
+    z-index: 8;
+}
+
+#p2 {
+    z-index: 7;
+}
+
+#p3 {
+    z-index: 6;
+}
+#p4 {
+    z-index: 5;
+}
+#p5 {
+    z-index: 4;
+}
+#p6 {
+    z-index: 3;
+}
+#p7 {
+    z-index: 2;
+}
+#p8 {
+    z-index: 1;
+}
+
+.flipped .livro__papel--frente,
+.flipped .livro__papel--tras
+{
+    transform: rotateY(-180deg);
+}
+
+.livro__botao-anterior {
+    position: absolute;
+    width: 7rem;
+    height: 100%;
+    z-index: 10;
+    left: 0;
+
+    @media only screen and (max-width: $bp-gig) {
+    left: 6rem;
+    }
+
+}
+
+.livro__botao-proximo {
+    position: absolute;
+    width: 7rem;
+    height: 100%;
+    z-index: 10;
+    right: 0;
+}
+

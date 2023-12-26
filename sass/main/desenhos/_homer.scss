@@ -1,0 +1,258 @@
+.homer__head{
+    position: relative;
+    width: 21.5rem;
+    height: 40.5rem;
+
+    @media only screen and (max-width: $bp-gig) {
+        
+    }
+
+    &--forehead{
+        position: absolute;
+        top: 2rem;
+        width: 17rem;
+        height: 20rem;
+        border-radius: 60%/50%;
+        transform: rotate(-18deg);
+        background-color:#FED90F;
+        border: .1rem solid #000000;
+
+        &-hair1{
+            position: absolute;
+            width: 8rem;
+            height: 7rem;
+            /*background-color: red;*/
+            top: 2.5rem;
+            border-top: .2rem solid #000000;
+            transform: rotate(-40deg);
+            border-radius: 50%;
+        }
+        
+        &-hair2{
+            position: absolute;
+            width: 8rem;
+            height: 7rem;
+            left: 1rem;
+            top: 1rem;
+            border-top: .2rem solid #000000;
+            transform: rotate(-30deg);
+            border-radius: 50%;
+        }
+    }
+
+    &--f-side1{
+        top: 18.5rem;
+        left: 3rem;
+        position: absolute;
+        width: 14rem;
+        height: 6rem;
+        background-color: #FED90F;
+    }
+
+    &--r-eye{
+        position: absolute;
+        left: 12rem;
+        width: 7.5rem;
+        height: 7.5rem;
+        top: 11rem;
+        border-radius: 50%;
+        background-color: white;
+        border: .1rem solid #000000;
+
+        &-pupil-right {
+            position: absolute;
+            width: .9rem;
+            height: .9rem;
+            background-color: #000000;
+            left: 3.5rem;
+            top: 4rem;
+            border-radius: 50%;
+            animation: right-eye 3s linear 0s infinite;
+        }
+    }
+
+    &--l-eye{
+        position: absolute;
+        width: 7.5rem;
+        height: 7.5rem;
+        top: 11.5rem;
+        left: 6rem;
+        border-radius: 50%;
+        background-color: white;
+        border: .1rem solid #000000;
+        
+        &-pupil-left {
+            position: absolute;
+            width: .9rem;
+            height: .9rem;
+            background-color: #000000;
+            left: 2.5rem;
+            top: 4rem;
+            border-radius: 50%;
+            animation: right-eye 3s linear 0s infinite;
+        }
+    }
+    
+    &--f-side2{
+        top: 16.5rem;
+        left: 2.2rem;
+        position: absolute;
+        width: 4rem;
+        height: 6rem;
+        background-color: #FED90F;
+        transform: rotate(-11deg);
+        border-left: .1rem solid #000000;
+    }
+    
+    &--nose{
+        position: absolute;
+        width: 6rem;
+        height: 3.2rem;
+        background-color:#FED90F;
+        top: 17.5rem;
+        left: 13rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        border-right: .1rem solid #000000;
+        border-top: .1rem solid #000000;
+        border-bottom: .1rem solid #000000;
+    }
+
+    &--mouth {
+        position: absolute;
+        width: 11.5rem;
+        height: 12rem;
+        background-color: #D1B271;
+        top: 20.7rem;
+        left: 6rem;
+        border-radius: 50%;
+        border: .1rem solid black;
+    
+        &-part1 {
+            position: absolute;
+            width: 2rem;
+            height: 3rem;
+            background-color: #D1B271;
+            top: 6.2rem;
+            left: 9.8rem;
+            border-radius: 50%;
+            border-right: .1rem solid black;
+            transform: rotate(15deg);
+        }
+        
+        &-part2 {
+            position: absolute;
+            width: 12rem;
+            height: 6rem;
+            background-color: #D1B271;
+            top: 2rem;
+            left: 3rem;
+            border-radius: 60%;
+            border-bottom: .1rem solid black;
+            transform: rotate(-6deg);
+        }
+        
+        &-part3 {
+            position: absolute;
+            width: 3.5rem;
+            height: 4.8rem;
+            background-color: #D1B271;
+            top: 23rem;
+            left: 16.5rem;
+            border-radius: 10%;
+            border-top: .1rem solid black;
+            transform: rotate(40deg);
+        }
+        
+        &-part4 {
+            position: absolute;
+            width: 6rem;
+            height: 3rem;
+            background-color: #D1B271;
+            top: 20rem;
+            left: 13rem;
+            border-right: .1rem solid black;
+            border-top-right-radius: 70%;
+        }
+        
+        &-part5 {
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            background-color: #D1B271;
+            top: 26rem;
+            left: 8rem;
+        }
+    }
+
+    &--neck {
+        position: absolute;
+        width: 12.5rem;
+        height: 15rem;
+        background-color: #FED90F;
+        top: 20rem;
+        left: 2.8rem;
+        border-left: .1rem solid black;
+        border-right: .1rem solid black;
+        transform: rotate(2deg);
+    }
+    
+    &--collar-left {
+        position: absolute;
+        width: 10rem;
+        height: 5rem;
+        background-color: white;
+        top: 33rem;
+        left: 1rem;
+        transform: rotate(15deg);
+        border-radius: 10%;
+        border: .1rem solid black;
+    }
+    
+    &--collar-right {
+        position: absolute;
+        width: 2rem;
+        height: 4.5rem;
+        background-color: white;
+        top: 34rem;
+        left: 15rem;
+        transform: rotate(-20deg);
+        border: .1rem solid black;
+    }
+    
+    &--ear {
+        position: absolute;
+        width: 3.2rem;
+        height: 3.7rem;
+        background-color: #FED90F;
+        top: 20rem;
+        left: 1rem;
+        border-radius: 50%;
+        transform: rotate(10deg);
+        border: .1rem solid black;
+    
+        &-1 {
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            top: .8rem;
+            left: .8rem;
+            border-left: .1rem solid black;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+        
+        &-2 {
+            position: absolute;
+            width: .8rem;
+            height: .8rem;
+            top: -.3rem;
+            border-bottom: .1rem solid black;
+        }
+    }
+    
+}
+
+
+
+

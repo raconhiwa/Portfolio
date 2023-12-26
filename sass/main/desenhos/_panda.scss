@@ -1,0 +1,148 @@
+.panda {
+    width: 25rem;
+    height: 25rem;
+    background: #fff;
+    border: 1.2rem solid #000;
+    border-radius: 50%;
+    position: relative;
+
+    @media only screen and (max-width: $bp-gig) {
+        width: 23rem;
+    height: 23rem;
+        }
+
+    
+    
+    
+
+    &__eye--left {
+    position: absolute;
+    width: 9rem;
+    height: 5rem;
+    background: #000;
+    top: 45%;
+    left: 1rem;
+    border-radius: 0 0 11.5rem 11.5rem;
+    transform: rotate(30deg);
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-gig) {
+        width: 8rem;
+        height: 4rem;
+    }
+
+    &-ball {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: #000;
+    border: 1.2rem solid #fff;
+    top: -50%;
+    left: 32%;
+    border-radius: 50%;
+
+    @media only screen and (max-width: $bp-gig) {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+}
+
+&__eye--right {
+    position: absolute;
+    width: 9rem;
+    height: 5rem;
+    background: #000;
+    top: 45%;
+    right: 1rem;
+    border-radius: 0 0 11.5rem 11.5rem;
+    transform: rotate(-30deg);
+    overflow: hidden;
+
+    
+    @media only screen and (max-width: $bp-gig) {
+        width: 8rem;
+        height: 4rem;
+    }
+
+    &-ball {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: #000;
+    border: 1.2rem solid #fff;
+    top: -50%;
+    right: 32%;
+    border-radius: 50%;
+
+    @media only screen and (max-width: $bp-gig) {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+}
+&__nose {
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #000;
+    border-radius: 50%;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+&__mouth {
+    position: absolute;
+    width: 5rem;
+    height: 1rem;
+    background: #000;
+    border-radius: 1rem;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+&__ear-left {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    background: #000;
+    border-radius: 50%;
+    top: -3rem;
+    left: -3.5rem;
+    z-index: -1;
+
+    @media only screen and (max-width: $bp-gig) {
+        width: 8rem;
+        height: 8rem;
+        top: -1rem;
+        left: -1.5rem;
+        }
+}
+
+&__ear-right {
+     position: absolute;
+    width: 13rem;
+    height: 13rem;
+    background: #000;
+    border-radius: 50%;
+    top: -3rem;
+    right: -3.5rem;
+    z-index: -1;
+
+    @media only screen and (max-width: $bp-gig) {
+        width: 8rem;
+        height: 8rem;
+        top: -1rem;
+        right: -1.5rem;
+        }
+}
+
+}
+
+
+
+
+
+

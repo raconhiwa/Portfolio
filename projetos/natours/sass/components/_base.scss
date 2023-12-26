@@ -1,0 +1,40 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    //Isso define o que 1rem é
+    font-size: 62.5%;  //1rem = 10p;  10px/16px = 62.5%
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1rem = 9px, 9/16 = 50%
+    }
+    @include respond(tab-port) { // widhth < 900?
+        font-size: 50%;  //1rem = 8px, 8/16 = 50%
+    }
+
+    
+    @include respond(telona) {
+        font-size: 75%; //1rem = 12, 12/16 = 75%
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: $cor-cinza-escura;
+    padding: 3rem;
+    box-sizing: border-box;
+
+    @include respond(tab-port) { // widhth < 900?
+        padding: 0;  //1rem = 8px, 8/16 = 50%
+    }
+    
+}

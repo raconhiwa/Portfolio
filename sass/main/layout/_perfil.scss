@@ -1,0 +1,367 @@
+.perfil {
+    position: absolute;
+    width: 75%;
+    height: 85%;
+    border-radius: 1rem;
+    background: linear-gradient(-20deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%); 
+    border: .3rem solid #fff;
+    font-family: 'Press Start 2P';
+    
+
+
+    @media only screen and (max-width: $bp-small ) {
+        margin-top: 50rem;
+        height: 150rem;
+        width: 90%;
+    }
+
+    &__cima {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            height: 30%;
+            
+        }
+
+        /*************************************************/
+        /***********NOME PERFIL NO CANTO DE CIMA**********/
+        /*************************************************/
+          &-perfil {
+            color: #fff;
+            position: absolute;
+            top: -.2rem;
+            right: -.2rem;
+            font-size: 2rem;
+            border: .3rem solid #fff;
+            border-radius: 1rem;
+            padding: 1rem 1rem 1rem 2rem;
+            text-transform: uppercase;
+          }
+
+          
+        /*************************************************/
+        /*******************FOTO E STATUS*****************/
+        /*************************************************/
+
+        &-img {
+            position: relative;
+            width: 25%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;  
+            
+            @media only screen and (max-width: $bp-small) {
+                width: 80%;
+            }
+
+            &-foto {
+                width: 10rem;
+
+                @media only screen and (max-width: $bp-small) {
+                    width: 15rem;
+                }
+            }
+        }
+
+        /*****************************/
+        /******HP,MP,LVL,SP,NOME******/
+        /*****************************/
+        &-status {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            
+            &-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                
+                
+                &-nome {
+                    color: #22ffff;
+                    font-size: 1.5rem;
+                    font-family: 'Press Start 2P';
+                    text-transform: uppercase;
+                    @media only screen and (max-width: $bp-small) {
+                        line-height: 2rem;
+                    }
+                }
+
+                &-pontos {
+                    position: absolute;
+                    right: 0;
+                    color: #fff; 
+                    font-size: 1.5rem;
+                    font-family: 'Press Start 2P';                  
+                }
+            }
+        }
+        /*****************************/
+        /********INFORMAÇÕES**********/
+        /*****************************/
+        &-infos {
+            position: relative;
+            width: 75%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase; 
+            
+            
+            @media only screen and (max-width: $bp-small) {
+                width: 100%;
+                margin-left: -10rem;
+            }
+
+            &-lista {
+                list-style: none;
+
+                &-items {
+                    color: #fff;
+                    font-size: 1.5rem;
+
+                    @media only screen and (max-width: $bp-small) {
+                        line-height: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+/***********parte de baixo****************/
+
+
+    &__baixo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-small) { 
+            flex-direction: column;
+        }
+
+
+        &-esquerdo {
+            position: relative;
+            width: 80%;
+            height: 100%;
+
+            @media only screen and (max-width: $bp-small) {
+                width: 100%; 
+            }
+
+            &--skills {
+                display: flex;
+
+                &-lista {
+                    font-size: 1.5rem;
+                    list-style: none;
+                    color: #22ffff;
+
+                    @media only screen and (max-width: $bp-small) {
+                        line-height: 2.5rem;
+                    }
+
+                }
+            }
+
+            &--skillsNum {
+                display: flex;
+
+                &-lista {
+                    font-size: 1.5rem;
+                    list-style: none;
+                    color: #fff;
+                    
+                    @media only screen and (max-width: $bp-small) {
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+        }
+
+        &-direito {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        
+            &--hobbies {
+                position: relative;
+                width: 100%;
+                height: 50%;
+                margin-left: 20rem;
+
+                @media only screen and (max-width: $bp-small) {
+                    margin-left: 2rem;
+                    font-size: 5rem;
+                }
+
+                &-lista {
+                    font-size: 1.5rem;
+                    list-style: none;
+                    display: flex;
+                    
+                    &-items {
+                        margin: 2.5rem 0 0 2rem;
+
+                        @media only screen and (max-width: $bp-small) {
+                            margin: 3rem 0 0 3rem;
+                            
+                        }
+                    }
+
+                    &-cubo {
+                        position: absolute;
+                        top: 5rem;
+                        left: 4rem;
+                        width: 40rem;
+                        height: 20rem;
+                        border: .3rem solid #fff;
+                        border-top: none;
+                        border-radius: 2rem;
+                        display: grid;
+                        grid: repeat(3, 1fr) / auto-flow;
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 46%;
+                            height: 5rem;
+                            border-top: .2rem solid #fff;
+                            border-top-right-radius: 2rem;
+                        }
+                        
+                    }
+
+                    & h1 {
+                        width: 100%;
+                        
+                    }
+                }
+                
+            }
+
+            &--socials {
+                position: relative;
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: center;    
+                align-items: center;
+                gap: 4rem;
+
+                & a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                
+                & i {
+                    font-size: 5rem;
+                    cursor: pointer;
+
+                    @media only screen and (max-width: $bp-small) {
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.lvl {
+    background: #ff00ff;
+
+    &:after {
+        content: '';
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #990099;
+        border-bottom-right-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+}
+
+.mp {
+    background: #0000ff;
+}
+
+.sp {
+    background: #66ff33;
+
+    &:after {
+        content: '';
+        width: 95%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #2db300;
+        border-bottom-right-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+}
+
+span {
+    transition: all .3s;
+}
+
+
+i{
+    font-size: 3rem;
+
+    &:hover {
+        color: #ff3399;
+    }
+}
+
+
+.icon {
+    
+    @media only screen and (max-width: $bp-large) {
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+.linha {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        display: block;
+    }
+
+}
